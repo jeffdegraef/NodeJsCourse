@@ -9,12 +9,12 @@ describe('Our first test', function () {
 });
 
 describe('index.html', function () {
-    it('should say hello', function (done) {
+    it('should h1 that says users', function (done) {
         const index = fs.readFileSync('./src/index.html', "utf-8");
         //create a virtual DOM and pull you index.html into it, now via object window you have access as if you are in browser
         jsdom.env(index,function (err,window) {
             const h1 = window.document.getElementsByTagName('h1')[0];
-            expect(h1.innerHTML).to.equal("Hello World!");
+            expect(h1.innerHTML).to.equal("Users");
             done();
             window.close();
 
