@@ -27,6 +27,7 @@ app.get('/',function (req,res) {
     res.sendFile(path.join(__dirname,'../src/index.html'));
 });
 
+
 //add new route as api endpoint, will return static user data
 
 app.get('/users',function (req,res) {
