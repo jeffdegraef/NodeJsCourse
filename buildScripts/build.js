@@ -17,13 +17,13 @@ webpack(webpackConfig).run((err,stats)=>{
 
    //this ensures that warnings and errors are displayed to the console. START
     const jsonStats = stats.toJSON();
-   if(jsonStatsh.hasErrors){
-       return jsonStats.errors.map(error==> console.log(chalk.red(error)));
+   if(jsonStats.hasErrors){
+       return jsonStats.errors.map(error=> console.log(chalk.red(error)));
    }
 
    if(jsonStats.hasWarnings){
        console.log(chalk.yellow('webpack generated with followin warnings'));
-       jsonStats.warnings.map(warning ==> {console.log(chalk.yellow(warning)));
+       jsonStats.warnings.map(warning => console.log(chalk.yellow(warning)));
    }
 
    console.log(`webpack stats: ${stats}`);

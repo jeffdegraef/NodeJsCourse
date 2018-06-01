@@ -7,8 +7,8 @@ import compression from 'compression';
 /* eslint-disable no-console */
 
 //import webpack
-import webpack from 'webpack';
-import config from '../webpack.config.dev';
+//import webpack from 'webpack';
+//import config from '../webpack.config.dev';
 
 //Express server
 const port = 3000;
