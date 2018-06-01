@@ -14,6 +14,8 @@ function getQueryStringParameterByName(name, url) {
     name = name.replace(/[\[\]]/g,"\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
+    console.log(chalk.green("In regex from useMockApi"));
+
     if (!results)return null;
     if (!results[2]) return '';
     console.log(chalk.green("Query string used:useMockApi"));
