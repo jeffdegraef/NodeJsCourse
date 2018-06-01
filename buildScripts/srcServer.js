@@ -1,9 +1,9 @@
 import express from 'express';
 import path from 'path';
 import open from 'open';
-
+import chalk from 'chalk';
 //ensures linting errors for console are not shown
-/* eslint-disable no-console */
+
 
 //import webpack
 import webpack from 'webpack';
@@ -15,6 +15,8 @@ const app = express();
 
 //Webpack compiler
 const compiler = webpack(config);
+
+console.log(chalk.blue('Webpack compiler declared...'));
 
 //attached webpack compiler to express server
 app.use(require('webpack-dev-middleware')(compiler,{

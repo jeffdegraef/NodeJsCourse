@@ -16,7 +16,7 @@ webpack(webpackConfig).run((err,stats)=>{
 
 
    //this ensures that warnings and errors are displayed to the console. START
-    const jsonStats = stats.toJSON();
+    const jsonStats = stats.toJson();
    if(jsonStats.hasErrors){
        return jsonStats.errors.map(error=> console.log(chalk.red(error)));
    }
