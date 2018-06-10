@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 12903881,
+      "firstName": "Meda",
+      "lastName": "McKenzie",
+      "email": "Aaron.Stracke@yahoo.com"
+    },
+    {
+      "id": 33794577,
+      "firstName": "Ryann",
+      "lastName": "Feeney",
+      "email": "Bradly29@gmail.com"
+    },
+    {
+      "id": 38932298,
+      "firstName": "Kendrick",
+      "lastName": "Von",
+      "email": "Tressa.Mosciski93@hotmail.com"
+    },
+    {
+      "id": 58320618,
+      "firstName": "Cora",
+      "lastName": "Emmerich",
+      "email": "Emiliano_Kub@gmail.com"
+    }
+  ]
+}
