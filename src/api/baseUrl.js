@@ -8,6 +8,7 @@ export default function getBaseUrl() {
         return getQueryStringParameterByName('useMockApi')? 'http://localhost:3001' : '/';
 }
 
+//test
 
 function getQueryStringParameterByName(name, url) {
     if(!url) url=window.location.href;
