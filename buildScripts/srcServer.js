@@ -45,7 +45,7 @@ app.listen(port,function (err) {
     if(err){
         console.log(err);
     } else {
-        open('http://localhost:' + port + "?useMockApi=true");
+        open('http://localhost:' + port);
     }
 });
 
