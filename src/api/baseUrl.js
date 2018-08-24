@@ -5,7 +5,7 @@ export default function getBaseUrl() {
     //const inDevelopment = window.location.hostname === 'localhost';
     //return inDevelopment ? 'http://localhost:3001/' : '/';
 
-        return getQueryStringParameterByName('useMockApi')? 'http://localhost:3001' : '/';
+        return getQueryStringParameterByName('useMockApi')? 'http://localhost:3001/' : '/';
 }
 
 //test
@@ -21,5 +21,5 @@ function getQueryStringParameterByName(name, url) {
     if (!results[2]) return '';
     console.log(chalk.green("Query string used:useMockApi"));
 
-    return decodeURIComponent(results[2].replace(/\+/g,""));
+    return decodeURIComponent(results[2].replace(/\+/g," "));
 }

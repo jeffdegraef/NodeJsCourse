@@ -14,7 +14,7 @@ describe('index.html', function () {
         //create a virtual DOM and pull you index.html into it, now via object window you have access as if you are in browser
         jsdom.env(index,function (err,window) {
             const h1 = window.document.getElementsByTagName('h1')[0];
-            expect(h1.innerHTML).to.equal("testje");
+            expect(h1.innerHTML).to.equal("Users");
             done();
             window.close();
 

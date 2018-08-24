@@ -16,6 +16,15 @@ getUsers().then(result =>{
             <td>${user.firstName}</td>
             <td>${user.lastName}</td>
             <td>${user.email}</td>
+            <td>${user.jobTitle}</td>
+            <td>${user.phoneNumber}</td>
+            <td>${user.account}</td>
+            <td>${user.accountName}</td>
+            <td>${user.companyName}</td>
+            <td>${user.zipCode}</td>
+            <td>${user.streetName}</td>
+            <td>${user.streetAddress}</td>
+            <td>${user.country}</td>
             </tr>`
     });
 
